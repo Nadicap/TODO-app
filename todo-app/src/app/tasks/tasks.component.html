@@ -1,0 +1,21 @@
+<mat-list>
+  <h3 mat-subheader class="day">Today</h3>
+  <mat-list-item class="mat-list-item" *ngFor="let todo of todos">
+    <mat-checkbox [ngClass]="{'strikethrough' : todo.checked === true}" [(ngModel)]="todo.checked">
+      <h4 class="todo" mat-line>{{todo.title}}</h4>
+    </mat-checkbox>
+    <div>
+      <span class="material-icons">
+        <a href="#" (click)="openEditDialog(todo)">
+          <mat-icon color="accent" mat-list-icon>edit</mat-icon>
+        </a>
+      </span>
+      <span style="position:relative; right: 35x">
+        <a href="#" (click)="deleteItem(todo.id)">
+          <mat-icon color="accent" mat-list-icon>delete</mat-icon>
+        </a>
+      </span>
+    </div>
+   <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,36 @@
+.container {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #a4a4a4;
+  box-shadow: 0 0 10px #a4a4a4;
+  border-radius: 10px;
+
+  .add-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 4px;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h5 {
+      margin-left: 10px;
+    }
+  }
+}
+
+.add-dialog {
+  width: 350px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    border-radius: none;
+  }
+}

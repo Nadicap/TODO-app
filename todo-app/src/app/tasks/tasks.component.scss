@@ -1,0 +1,17 @@
+@import '../../styles.scss';
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.todo {
+  font-family: $font-stack;
+}
+
+.day {
+  font-family: $font-stack;
+}
+
+:host /deep/ .mat-list-item-content {
+  justify-content: space-between;
+}

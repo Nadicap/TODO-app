@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{dialogTitle}}</h2>
+<mat-dialog-content [formGroup]="form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder={{placeholder}}
+    formControlName="title" >
+  </mat-form-field>
+  <mat-dialog-actions>
+    <button mat-button class="cancel-btn" (click)="onCancel()">Cancel</button>
+    <button mat-raised-button color="primary" [disabled]="!form.valid"
+    (click)="onSave(data.todo)">Save</button>
+  </mat-dialog-actions>
+</mat-dialog-content>
